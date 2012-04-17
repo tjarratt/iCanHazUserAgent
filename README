@@ -1,0 +1,7 @@
+Like icanhazip.com but for user agent strings.
+
+Dependencies:
+
+node.js (0.4 + )
+express.js@2.5.8
+jade@0.20.3
