@@ -10,5 +10,7 @@ app.listen(8080);
 app.get("/", function(request, response) {
   util.puts("got a visitor at " + (new Date()));
   util.puts(request.headers['user-agent']);
-  response.render("index", {useragent: request.headers['user-agent'].toString()});
+  var ua = request.headers['user-agent'];
+  ua = ua ? ua.toString() : "";
+  response.render("index", {useragent: ua});
 });
