@@ -5,7 +5,10 @@ var util = require("util");
 app.use(express.static(__dirname + "/public"));
 app.set("views", __dirname + "/views");
 app.set("view engine", "jade");
-app.listen(8080);
+
+var port = process.env.PORT || 8080;
+console.log("listening on port " + port);
+app.listen(port);
 
 app.get("/", function(request, response) {
   util.puts("got a visitor at " + (new Date()));
