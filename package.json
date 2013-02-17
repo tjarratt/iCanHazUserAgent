@@ -1,0 +1,12 @@
+{
+  "name": "i-can-haz-useragent",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.x",
+    "jade": "0.20.3"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
